@@ -94,3 +94,6 @@ mod 'rgbank',
 mod 'bolt',
   :git => 'https://github.com/puppetlabs/bolt.git',
   :ref => '0.5.1'
+
+mod 'myfacts',
+  :git => 'https://github.com/gregloughmiller2/myfacts.git'

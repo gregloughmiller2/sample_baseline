@@ -9,4 +9,8 @@ f5_partition { 'App2':
     name     => 'App2',
     ensure   => 'present',
   }
+f5_partition { 'App3':
+    name     => 'App3',
+    ensure   => 'present',
+  }
 }

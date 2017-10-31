@@ -4,10 +4,19 @@ f5_user { '/App1/greg1':
     name     => 'greg1',
     ensure   => 'present',
     password => 'greg1',
+    role     => 'Manager',
+    parttion => 'App1',
   }
 f5_user { '/App2/greg2':
     name     => 'greg2',
     ensure   => 'present',
     password => 'greg2',
+    role     => 'Manager',
+    parttion => 'App2',
+  }
+f5_user { '/App1/greg3':
+    name     => '/App3/greg3',
+    ensure   => 'present',
+    password => 'greg3',
   }
 }

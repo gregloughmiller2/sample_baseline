@@ -21,7 +21,7 @@ f5_pool { '/Common/puppet_pool':
       { name => '/Common/WWW_Server_2', port => '80', },
     ],
     availability_requirement  => 'all',
-    health_monitors           => [''/Common/http_head_f5'],
+    health_monitors           => ['/Common/http_head_f5'],
     require                   => [
       F5_node['/Common/WWW_Server_1'],
       F5_node['/Common/WWW_Server_2'],

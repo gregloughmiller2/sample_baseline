@@ -58,6 +58,10 @@ node 'bigip' {
     #vlan_and_tunnel_traffic   => {'enabled' => ['/Common/Client']},
     require                   => F5_pool['/Common/puppet_pool'],
   }
+  f5_partition { 'App3':
+    name => 'App3',
+    ensure => 'present',
+  }
 }
 node 'master.inf.puppet.vm' {
   class {'f5': }

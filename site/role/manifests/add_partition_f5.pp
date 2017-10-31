@@ -4,7 +4,8 @@ f5_partition { 'App1':
     name     => 'App1',
     ensure   => 'present',
   }
-f5_user { 'App2':
+
+f5_partition { 'App2':
     name     => 'App2',
     ensure   => 'present',
   }

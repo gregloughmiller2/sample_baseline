@@ -16,6 +16,7 @@ f5_user { '/Users/greg3':
     password => 'greg3',
   }
 f5_user { '/Users/greg4':
+    name     => '/User/greg4',
     ensure   => 'present',
     password => 'greg4',
   }

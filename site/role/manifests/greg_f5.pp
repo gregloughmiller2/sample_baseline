@@ -2,14 +2,14 @@ class role::sample_f5 {
 
 f5_node { '/Common/WWW_Server_1':
     ensure                   => 'present',
-    address                  => '52.207.82.45'
+    address                  => '52.207.82.45',
     description              => 'WWW Server 1',
     availability_requirement => 'all',
     health_monitors          => ['/Common/icmp'],
   }
 f5_node { '/Common/WWW_Server_2':
     ensure                   => 'present',
-    address                  => '52.55.154.166'
+    address                  => '52.55.154.166',
     description              => 'WWW Server 2',
     availability_requirement => 'all',
     health_monitors          => ['/Common/icmp'],
@@ -32,7 +32,7 @@ f5_virtualserver { '/Common/puppet_vs':
     ensure                    => 'present',
     provider                  => 'standard',
     default_pool              => '/Common/puppet_pool',
-    destination_address       => '54.156.241.113'
+    destination_address       => '54.156.241.113',
     destination_mask          => '255.255.255.255',
     http_profile              => '/Common/http',
     service_port              => '80',

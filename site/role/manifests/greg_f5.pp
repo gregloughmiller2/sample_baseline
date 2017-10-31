@@ -1,3 +1,5 @@
+class role::sample_f5 {
+
 f5_node { '/Common/WWW_Server_1':
     ensure                   => 'present',
     address                  => '52.207.82.45'
@@ -39,4 +41,4 @@ f5_virtualserver { '/Common/puppet_vs':
     #vlan_and_tunnel_traffic   => {'enabled' => ['/Common/Client']},
     require                   => F5_pool['/Common/puppet_pool'],
   }
-
+}

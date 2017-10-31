@@ -1,4 +1,4 @@
-class role::sample_f5 {
+class role::build_f5 {
 
 f5_node { '/Common/WWW_Server_1':
     ensure                   => 'present',
@@ -21,18 +21,18 @@ f5_pool { '/Common/puppet_pool':
       { name => '/Common/WWW_Server_2', port => '80', },
     ],
     availability_requirement  => 'all',
-    health_monitors           => ['/Common/http_head_f5'],
+    health_monitors           => ['/Common/icmp'],
     require                   => [
       F5_node['/Common/WWW_Server_1'],
       F5_node['/Common/WWW_Server_2'],
     ],
   }
   #f5_vlan { '/Common/Client': }
-f5_virtualserver { '/Common/puppet_vs':
+f5_virtualserver { '/Common/puppet_vs1':
     ensure                    => 'present',
     provider                  => 'standard',
     default_pool              => '/Common/puppet_pool',
-    destination_address       => '54.156.241.113',
+    destination_address       => '10.0.0.200',
     destination_mask          => '255.255.255.255',
     http_profile              => '/Common/http',
     service_port              => '80',

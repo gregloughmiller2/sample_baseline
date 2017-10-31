@@ -97,3 +97,5 @@ mod 'bolt',
 
 mod 'myfacts',
   :git => 'https://github.com/gregloughmiller2/myfacts.git'
+
+mod 'puppetlabs-f5', '1.5.4'

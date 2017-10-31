@@ -49,7 +49,7 @@ node 'bigip' {
     ensure                    => 'present',
     provider                  => 'standard',
     default_pool              => '/Common/puppet_pool',
-    destination_address       => '54.156.241.113',
+    destination_address       => '10.0.0.200',
     destination_mask          => '255.255.255.255',
     http_profile              => '/Common/http',
     service_port              => '80',

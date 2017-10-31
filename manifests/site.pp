@@ -8,7 +8,7 @@ site {
 
 }
 
-node 'bigip' {
+node 'master.inf.puppet.vm' {
   class {'f5': }
 }
 

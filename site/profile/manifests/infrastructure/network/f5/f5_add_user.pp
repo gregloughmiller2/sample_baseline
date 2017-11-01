@@ -1,4 +1,4 @@
-class role::add_user_f5 {
+class profile::infrastructure::network::f5::f5_add_user {
 
 f5_user { '/Users/greg1':
     name     => 'greg1',

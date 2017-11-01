@@ -1,4 +1,4 @@
-class profile::infrastructure::network:f5::f5_add_partition {
+class profile::infrastructure::network::f5::f5_add_partition {
 
 f5_partition { 'App1':
     name     => 'App1',

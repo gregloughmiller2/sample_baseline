@@ -4,7 +4,7 @@ f5_command { '/Common/tmsh':
   tmsh => {
     command => "list",
     name     => "auth",
-    target   => "user",
+    target   => "user greg3",
   }
   }
 }

@@ -1,4 +1,4 @@
-class profile::infrastructure::network::f5::f5_add_user {
+class profile::infrastructure::network::f5::f5_delete_user {
 
 f5_user { '/Users/greg1':
     name     => '/Users/greg1',

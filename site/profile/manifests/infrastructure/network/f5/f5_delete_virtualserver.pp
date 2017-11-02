@@ -1,4 +1,4 @@
-class profile::infrastructure::network::f5::f5_add_virtualserver {
+class profile::infrastructure::network::f5::f5_delete_virtualserver {
 
 f5_node { '/Common/WWW_Server_1':
     ensure                   => 'absent',

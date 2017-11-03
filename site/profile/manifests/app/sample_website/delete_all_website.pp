@@ -1,4 +1,4 @@
-class profile::app::sample_website::cedelete_all_website 
+class profile::app::sample_website::delete_all_website 
  {
 
 

@@ -79,7 +79,6 @@ mod 'puppet-nginx', '0.7.1'
 mod 'bodgit-rngd', '2.0.0'
 mod 'jonono-auditpol', '0.1.2'
 mod 'nexcess-auditd', '2.0.0'
-mod 'f5-f5', '1.7.0'
 
 mod 'tse-tse_facts',
   :git => 'https://github.com/puppetlabs/tse-module-tse_facts.git'
@@ -98,3 +97,7 @@ mod 'bolt',
 
 mod 'myfacts',
   :git => 'https://github.com/gregloughmiller2/myfacts.git'
+
+mod 'f5-f5', '1.7.0'
+mod 'puppetlabs-azure', '1.2.0'
+

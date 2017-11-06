@@ -99,5 +99,5 @@ mod 'myfacts',
   :git => 'https://github.com/gregloughmiller2/myfacts.git'
 
 mod 'f5-f5', '1.7.0'
-mod 'puppetlabs-azure', '1.2.0'
+mod 'puppetlabs-azure', '1.2.4'
 

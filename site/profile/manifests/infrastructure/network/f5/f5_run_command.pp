@@ -4,7 +4,7 @@ f5_command { '/Common/tmsh':
   tmsh => {
     command => "delete",
     name => "Partition",
-    trget => "App2",
+    target => "App2",
   }
   }
 }

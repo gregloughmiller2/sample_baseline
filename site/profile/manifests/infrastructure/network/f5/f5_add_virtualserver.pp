@@ -2,14 +2,14 @@ class profile::infrastructure::network::f5::f5_add_virtualserver {
 
 f5_node { '/Common/WWW_Server_1':
     ensure                   => 'present',
-    address                  => '52.207.82.45',
+    address                  => '10.0.0.8',
     description              => 'WWW Server 1',
     availability_requirement => 'all',
     health_monitors          => ['/Common/icmp'],
   }
 f5_node { '/Common/WWW_Server_2':
     ensure                   => 'present',
-    address                  => '52.55.154.166',
+    address                  => '10.0.0.174',
     description              => 'WWW Server 2',
     availability_requirement => 'all',
     health_monitors          => ['/Common/icmp'],
@@ -37,6 +37,7 @@ f5_virtualserver { '/Common/puppet_vs1':
     http_profile              => '/Common/http',
     service_port              => '80',
     protocol                  => 'tcp',
+    source_address_translation   => 'automap',
     source                    => '0.0.0.0/0',
     #vlan_and_tunnel_traffic   => {'enabled' => ['/Common/Client']},
     require                   => F5_pool['/Common/puppet_pool'],

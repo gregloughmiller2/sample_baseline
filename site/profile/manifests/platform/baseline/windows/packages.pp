@@ -5,9 +5,15 @@ class profile::platform::baseline::windows::packages {
     provider => chocolatey,
   }
 
-  package { 'notepadplusplus': }
-  package { '7zip': }
-  package { 'git': }
+  package { 'notepadplusplus': 
+    ensure  => '7.4.2',
+  }
+  package { '7zip': 
+    ensure => latest'
+  }
+  package { 'git': 
+    ensure  => '2.14.1',
+  }
   package { 'uniextract': }
 
 }

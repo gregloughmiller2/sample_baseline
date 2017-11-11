@@ -1,19 +1,19 @@
 class profile::platform::baseline::windows::packages {
 
-  Package {
-    ensure   => installed,
-    provider => chocolatey,
-  }
-
   package { 'notepadplusplus': 
     ensure  => '7.4.2',
+    provider => chocolatey,
   }
   package { '7zip': 
-    ensure => latest'
+    ensure => latest,
+    provider => chocolatey,
   }
   package { 'git': 
     ensure  => '2.14.1',
+    provider => chocolatey,
   }
   package { 'uniextract': }
+    ensure  => installed,
+    provider => chocolatey,
 
 }

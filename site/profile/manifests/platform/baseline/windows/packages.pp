@@ -8,10 +8,10 @@ class profile::platform::baseline::windows::packages {
 #    ensure => latest,
 #    provider => chocolatey,
 #  }
-#  package { 'git': 
-#    ensure  => '2.14.1',
-#    provider => chocolatey,
-#  }
+  package { 'git': 
+    ensure  => '2.14.1',
+    provider => chocolatey,
+  }
 #  package { 'uniextract': 
 #    ensure  => installed,
 #    provider => chocolatey,

@@ -12,7 +12,7 @@ class profile::platform::baseline::windows::packages {
     ensure  => '2.14.1',
     provider => chocolatey,
   }
-  package { 'uniextract': }
+  package { 'uniextract': 
     ensure  => installed,
     provider => chocolatey,
 

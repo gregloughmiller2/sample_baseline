@@ -4,6 +4,10 @@ class profile::platform::baseline::windows::remove_packages {
     ensure  => absent,
     provider  => chocolatey,
   }
+  package { '7zip.install': 
+    ensure => absent,
+    provider  => chocolatey,
+  }
   package { '7zip': 
     ensure => absent,
     provider  => chocolatey,

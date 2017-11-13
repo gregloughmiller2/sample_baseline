@@ -12,8 +12,4 @@ class profile::platform::baseline::windows::packages {
     ensure  => '2.14.1',
     provider => chocolatey,
   }
-  package { 'putty': 
-    ensure  => '0.68',
-    provider => chocolatey,
-  }
 }

@@ -1,7 +1,7 @@
 class profile::platform::baseline::windows::packages {
 
   package { 'notepadplusplus': 
-    ensure  => '7.4.2',
+    ensure  => latest,
     provider => chocolatey,
   }
   package { '7zip': 

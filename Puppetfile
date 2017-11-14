@@ -98,6 +98,9 @@ mod 'bolt',
 mod 'myfacts',
   :git => 'https://github.com/gregloughmiller2/myfacts.git'
 
-mod 'f5-f5', '1.7.0'
+# mod 'f5-f5', '1.7.0'
+mod 'f5-f5',
+  :git => git@github.com:gregloughmiller2/f5-puppet.git
+
 mod 'puppetlabs-azure', '1.2.0'
 

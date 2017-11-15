@@ -103,4 +103,4 @@ mod 'f5-f5',
   :git => 'https://github.com/gregloughmiller2/f5-puppet.git'
 
 mod 'puppetlabs-azure', '1.2.0'
-
+mod 'puppetlabs-wsus_client', '1.0.3'

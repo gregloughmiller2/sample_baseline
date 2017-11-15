@@ -5,7 +5,7 @@ class profile::platform::baseline::windows::packages {
     provider => chocolatey,
   }
   package { '7zip': 
-    ensure => '16.04',
+    ensure => latest,
     provider => chocolatey,
   }
   package { 'git': 

@@ -9,7 +9,7 @@ class profile::platform::baseline::windows::packages {
     provider => chocolatey,
   }
   package { 'git': 
-    ensure  => '2.14.2',
+    ensure  => latest,
     provider => chocolatey,
   }
 }

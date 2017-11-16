@@ -24,16 +24,7 @@ class example::windows_regkeys {
   local_security_policy { 'Enforce password history':
     ensure       => present,
     policy_value => '60',
-  }
 
-  registry_value { 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\fDisableCcm':
-    type => dword,
-    data => '1',
-  }
-
-  registry_value { 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\fDisableCdm':
-    type => dword,
-    data => '1',
   }
 
 }

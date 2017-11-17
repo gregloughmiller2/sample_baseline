@@ -5,13 +5,7 @@ class profile::app::sample_website::delete_sample_website (
   String $website_source_dir = 'puppet:///modules/profile/app/sample_website'
 ) {
 
-  file { "${doc_root}/index.html":
-    ensure  => absent,
-###    content => epp('profile/app/sample_website.html.epp'),
-  }
   
-  
-
   iis_site { 'sample_website':
     ensure          => absent,
     physicalpath    => $doc_root,
@@ -20,6 +14,22 @@ class profile::app::sample_website::delete_sample_website (
 
   iis_application_pool { 'sample_website':
     ensure  =>  absent,
+  }
+   $iis_features = [
+    'Web-Server',
+    'Web-WebServer',
+    'Web-Http-Redirect',
+    'Web-Mgmt-Console',
+    'Web-Mgmt-Tools',
+  ]
+
+  windowsfeature { $iis_features:
+    ensure => absent,
+  }
+  
+  file { "${doc_root}/index.html":
+    ensure  => absent,
+###    content => epp('profile/app/sample_website.html.epp'),
   }
   
 }

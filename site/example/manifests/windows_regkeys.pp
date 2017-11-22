@@ -16,15 +16,5 @@ class example::windows_regkeys {
     data => '0xFFFFFFFF',
   }
   
-  local_security_policy { 'Maximum password age':
-    ensure       => present,
-    policy_value => '40',
-  }
-
-  local_security_policy { 'Enforce password history':
-    ensure       => present,
-    policy_value => '60',
-
-  }
 
 }

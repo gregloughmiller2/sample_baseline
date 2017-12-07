@@ -1,4 +1,4 @@
-class ::profile::platform::baseline::windows::security_baseline {
+class profile::platform::baseline::windows::security_baseline {
 
   # CUSTOM APP REG KEYS
   registry_key { 'HKEY_LOCAL_MACHINE\Software\Demonstration':

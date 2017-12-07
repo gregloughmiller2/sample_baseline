@@ -15,7 +15,7 @@ class profile::platform::baseline::windows::motd {
 #
 #    | MOTD
 #
-  $motd = "Welcome to ${::hostname}"
+  $motd = "Welcome to ${::fqdn}. OS of ${::operatingsystem} In Domain of ${::domain} "
 
   # Check if we have a hiera override for the MOTD, otherwise use the default
   $message = lookup('motd', String, 'first', $motd)

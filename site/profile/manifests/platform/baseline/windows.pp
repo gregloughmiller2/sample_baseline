@@ -6,5 +6,7 @@ class profile::platform::baseline::windows {
   include ::profile::platform::baseline::windows::firewall
   include ::profile::platform::baseline::windows::packages
   include ::profile::platform::baseline::users::windows
+# Added for security demo
+  include ::profile::platform::baseline::windows::security_baseline
 
 }

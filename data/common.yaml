@@ -1,2 +1,0 @@
----
-puppet_enterprise::profile::master::check_for_updates: false

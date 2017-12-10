@@ -64,6 +64,6 @@ node default {
 #  }
 #}
 
-node 'master.inf.puppet.vm' {
-  class {'f5': }
-}
+#node 'master.inf.puppet.vm' {
+#  class {'f5': }
+#}
